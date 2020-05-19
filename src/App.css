@@ -1,0 +1,11 @@
+.row {
+  margin: 10px auto;
+}
+
+ul.wrap {
+  text-align: center;
+}
+
+li.row .ant-btn+.ant-btn {
+  margin-left: 10px;
+}

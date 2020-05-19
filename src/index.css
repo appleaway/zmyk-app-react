@@ -1,0 +1,31 @@
+@import "./assets/font/iconfont.css";
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#root {
+  overflow: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+.ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

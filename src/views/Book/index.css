@@ -1,0 +1,454 @@
+.mk-detail .top-nav {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  height: 1.1733450667rem;
+  color: #fff;
+}
+
+.mk-detail .top-nav .msg {
+  position: relative;
+  text-align: center
+}
+
+.mk-detail .top-nav .msg .cy_cmt_count {
+  position: absolute;
+  top: .1600016rem;
+  right: .1600016rem;
+  height: .400004rem;
+  line-height: .400004rem;
+  min-width: .400004rem;
+  padding: 0 .0533338667rem;
+  text-align: center;
+  font-size: .2400024rem;
+  border-radius: .200002rem;
+  color: #fff;
+  background-color: #fc6454
+}
+
+.mk-detail .top-nav [class*=ift-] {
+  color: inherit;
+  padding: .3333366667rem .400004rem
+}
+
+.mk-detail .comic-info {
+  position: relative;
+  z-index: 2;
+  height: 4.0667073333rem;
+  padding: 1.4133474667rem 0 0 3.600036rem;
+  font-size: .2666693333rem;
+  color: #fff;
+  box-sizing: border-box
+}
+
+.mk-detail .comic-info .cover-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  overflow: hidden
+}
+
+.mk-detail .comic-info .cover-bg .thumbnail {
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  bottom: -10%;
+  left: -50%;
+  filter: blur(.4rem);
+  opacity: .5 !important;
+  object-fit: cover;
+}
+
+.mk-detail .comic-info .comic-item {
+  position: absolute;
+  top: 1.3600136rem;
+  left: .2933362667rem;
+  padding: .0533338667rem;
+  width: 2.9066957333rem;
+  box-shadow: 0 0 .1333346667rem rgba(0, 0, 0, .3);
+  background: #fff;
+  border-radius: .0533338667rem;
+  overflow: hidden
+}
+
+.mk-detail .comic-info .comic-item .score {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: .4266709333rem;
+  line-height: .4266709333rem;
+  padding: 0 .1066677333rem 0 .2133354667rem;
+  border-radius: .2133354667rem 0 0 .2133354667rem;
+  background-color: rgba(0, 0, 0, .5);
+  color: #fff;
+  font-size: .2666693333rem;
+}
+
+.mk-detail .comic-info .comic-item .thumbnail {
+  border-radius: 0;
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 133.33333%;
+  box-sizing: border-box;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.mk-detail .comic-info .comic-item .thumbnail img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.mk-detail .comic-info .name {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 1.2;
+  font-size: .4800048rem;
+  font-weight: 700;
+  margin: 0 auto;
+}
+
+.mk-detail .comic-info .author {
+  display: inline-block;
+  height: .3200032rem;
+  line-height: .3200032rem;
+  padding-bottom: 0;
+  margin-top: .0800008rem;
+  font-size: .2666693333rem
+}
+
+.mk-detail .comic-info .hasread {
+  height: .400004rem;
+  line-height: .400004rem;
+  font-size: .3200032rem
+}
+
+.mk-detail .comic-info .hasread:before {
+  margin-right: .1066677333rem
+}
+
+.mk-detail .handlebox {
+  justify-content: flex-end;
+  background: #fff;
+  height: 1.3333466667rem
+}
+
+.mk-detail .handlebox,
+.mk-detail .handlebox .downApp,
+.mk-detail .handlebox .read {
+  display: flex;
+  align-items: center
+}
+
+.mk-detail .handlebox .downApp,
+.mk-detail .handlebox .read {
+  justify-content: center;
+  margin-right: .3333366667rem;
+  width: 2.7333606667rem;
+  height: .800008rem;
+  text-align: center;
+  font-size: .3466701333rem;
+  border-radius: .400004rem
+}
+
+.mk-detail .handlebox .downApp {
+  color: #fc6454;
+  background: #fff;
+  border: .0266669333rem solid #fc6454
+}
+
+.mk-detail .handlebox .read {
+  color: #fff;
+  background: #fc6454;
+  border: 0
+}
+
+
+.mk-detail .tags-box {
+  height: .9333426667rem;
+  font-size: 0;
+  overflow: hidden
+}
+
+.mk-detail .tags-box .tags {
+  display: inline-block;
+  margin-right: .1066677333rem
+}
+
+.mk-detail .tags-box .tags {
+  display: inline-block;
+  padding: .2666693333rem 0
+}
+
+.mk-detail .tags-box .tags .tags-txt {
+  display: inline-block;
+  padding: 0 .1600016rem;
+  height: .400004rem;
+  line-height: .400004rem;
+  vertical-align: top;
+  font-size: .2666693333rem;
+  color: #fff;
+  background: rgba(0, 0, 0, .2);
+  border-radius: .200002rem;
+  opacity: .9
+}
+
+.mk-detail .tags-box .tags:nth-child(5n + 1) .tags-txt {
+  background-color: rgb(199, 133, 144);
+}
+
+.mk-detail .tags-box .tags:nth-child(5n + 2) .tags-txt {
+  background-color: rgb(243, 189, 126);
+}
+
+.mk-detail .tags-box .tags:nth-child(5n + 3) .tags-txt {
+  background-color: rgb(110, 196, 233);
+}
+
+.mk-detail .tags-box .tags:nth-child(5n + 4) .tags-txt {
+  background-color: rgb(102, 201, 187);
+}
+
+.mk-detail .tags-box .tags:nth-child(5n + 5) .tags-txt {
+  background-color: rgb(155, 155, 213);
+}
+
+/**********************************************************************************************************************************************************/
+
+
+.mk-chapterlist-box,
+.mk-chapterlist-box>.hd {
+  font-size: .3733370667rem
+}
+
+.mk-chapterlist-box>.hd {
+  display: flex;
+  align-items: center;
+  padding: .3200032rem .2666693333rem .1066677333rem;
+  color: #999
+}
+
+.mk-chapterlist-box>.hd .time {
+  flex: 1;
+  font-size: .3466701333rem;
+  color: #333;
+  margin-left: 1em;
+}
+
+.mk-chapterlist-box>.hd .order-switch {
+  font-size: .3200032rem
+}
+
+.mk-chapterlist-box>.hd .order-switch:before {
+  margin-right: .0533338667rem;
+  font-size: .3200032rem;
+  color: #ddd
+}
+
+.mk-chapterlist-box>.bd {
+  overflow: hidden;
+  margin-bottom: .3200032rem
+}
+
+.chapterlist {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  height: 3.200032rem;
+  padding: 0 .3200032rem
+}
+
+.chapterlist>.item {
+  position: relative;
+  width: 22.75%;
+  height: .8533418667rem;
+  margin-top: .2133354667rem;
+  margin-right: 3%;
+  background: rgba(50, 50, 51, .09);
+  border-radius: .0533338667rem
+}
+
+.chapterlist>.item:nth-child(4n) {
+  margin-right: 0
+}
+
+.chapterlist>.item .chapterBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #555
+}
+
+.chapterlist>.item .chapterBtn span {
+  line-height: 1.2;
+  font-size: 12px;
+}
+
+.chapterlist>.item .updot {
+  position: absolute;
+  top: -.0533338667rem;
+  right: -.0533338667rem;
+  width: .1600016rem;
+  height: .1600016rem;
+  border-radius: 50%;
+  background-color: #fc6454
+}
+
+.chapterlist>.item .readChapter {
+  position: absolute;
+  top: -.200002rem;
+  right: -.1333346667rem;
+  color: #fc6454
+}
+
+.chapterlist>.item .readChapter:before {
+  font-size: .3200032rem
+}
+
+.chapterlist>.item .lockIcon {
+  position: absolute;
+  top: -.1066677333rem;
+  left: -.0800008rem;
+  width: .2400024rem
+}
+
+.chapterlist.autoHeight {
+  height: auto
+}
+
+.mk-chapterlist-box>.ft .more {
+  display: block;
+  height: .8533418667rem;
+  margin: 0 .3200032rem .4266709333rem;
+  border: .0133334667rem solid #ddd;
+  line-height: .8533418667rem;
+  border-radius: 8px;
+  text-align: center;
+  color: #999
+}
+
+/**************************************************************************************************************/
+
+
+.comic-detail {
+  font-size: .3733370667rem;
+  margin: 0 .2666693333rem
+}
+
+.comic-detail .content {
+  padding-bottom: .4266709333rem;
+  line-height: 1.5;
+  color: #666;
+  font-size: .3733370667rem;
+  border-bottom: .0133334667rem solid #ddd
+}
+
+.comic-detail .content.last-child {
+  border: 0
+}
+
+.comic-detail .content .author-info {
+  position: relative;
+  padding-left: 1.0666773333rem
+}
+
+.comic-detail .content .author-avatar {
+  position: absolute;
+  left: 0;
+  top: .1066677333rem;
+  width: .8533418667rem;
+  height: .8533418667rem;
+  border-radius: 50%;
+  margin-right: .1333346667rem;
+  background-image: url("~@/assets/images/error.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: rgb(255, 255, 255);
+}
+
+.comic-detail .content .author-main {
+  font-size: .3200032rem
+}
+
+.comic-detail .content .author-name {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center
+}
+
+.comic-detail .content .author-level {
+  margin-left: .1333346667rem;
+  color: #d7d1ef
+}
+
+.comic-detail .content .author-fans {
+  font-size: .2666693333rem
+}
+
+.comic-detail .content .fans-num {
+  color: #fc6454
+}
+
+
+.autor-production>.hd,
+.comic-detail>.hd {
+  height: 1.2800128rem;
+  padding: .3200032rem 0 .1066677333rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center
+}
+
+
+.autor-production>.hd,
+.mk-recommend>.hd {
+  padding: .2133354667rem .2666693333rem
+}
+
+.autor-production {
+  padding-bottom: .2666693333rem
+}
+
+.autor-production>.hd [class*=ift-] {
+  color: #fc6454;
+  margin-right: .0533338667rem
+}
+
+.mk-recommend>.hd .title,
+.autor-production>.hd .title,
+.comic-detail>.hd .title {
+  color: #333;
+  line-height: .8533418667rem;
+  font-size: .3733370667rem;
+  font-weight: 400
+}
+
+.comic-item-wrap {
+  width: 100%;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+}

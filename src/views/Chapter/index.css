@@ -1,0 +1,144 @@
+.comic-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 999;
+}
+
+.comic-header .title {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 50%;
+  font-size: .4266709333rem;
+  font-weight: 400
+}
+
+.comic-header .left,
+.comic-header .right {
+  display: flex;
+  flex: none;
+  justify-content: center;
+  align-items: center;
+  font-size: .3733370667rem
+}
+
+.comic-header .left .text,
+.comic-header .right .text {
+  padding-left: .2666693333rem;
+  height: 100%;
+  line-height: 1.1733450667rem;
+  color: #fff
+}
+
+.comic-header .left>a {
+  color: #fff
+}
+
+.comic-header .right {
+  right: .2666693333rem
+}
+
+.comic-header .back {
+  font-size: .5866725333rem;
+  width: 1.1733450667rem;
+  height: 1.1733450667rem
+}
+
+.comic-header.top-nav {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: transparent
+}
+
+.comic-header.top-nav .msg {
+  position: relative;
+  text-align: center
+}
+
+.comic-header.top-nav .msg .cy_cmt_count {
+  position: absolute;
+  top: .1600016rem;
+  right: .1600016rem;
+  height: .400004rem;
+  line-height: .400004rem;
+  min-width: .400004rem;
+  padding: 0 .0533338667rem;
+  text-align: center;
+  font-size: .2400024rem;
+  border-radius: .200002rem;
+  color: #fff;
+  background-color: #fc6454
+}
+
+.comic-header.top-nav [class*=ift-] {
+  color: #fff;
+  padding: .3333366667rem .400004rem
+}
+
+.comic-header .hd-center {
+  flex: 1;
+  text-align: center;
+  color: #fff
+}
+
+.comic-header .hd-center h1 {
+  font-size: 14px;
+}
+
+#comic-chapter .bot,
+#comic-chapter .top {
+  transition: .1s
+}
+
+#comic-chapter .top.hide {
+  transform: translateY(-1.17333rem)
+}
+
+#comic-chapter .bot.hide {
+  transform: translateY(1.28rem)
+}
+
+.tools {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 1.2800128rem;
+  padding: .10666773rem .26666933rem 0;
+  list-style: none;
+  display: flex;
+  background-color: rgba(0, 0, 0, .5)
+}
+
+.tools>.item {
+  flex: 1
+}
+
+.tools>.item>.hd {
+  display: block;
+  z-index: 2;
+  width: 100%;
+  height: 1.06667733rem;
+  padding: .10666773rem 0 0;
+  text-align: center
+}
+
+.tools>.item>.hd .text,
+.tools>.item>.hd [class^=ift-] {
+  display: block
+}
+
+.tools>.item>.hd .text {
+  font-size: .26666933rem;
+  height: .400004rem;
+  line-height: .400004rem;
+  color: #fff
+}
+
+.tools>.item>.hd [class^=ift-] {
+  font-size: .42667093rem;
+  color: #fff
+}

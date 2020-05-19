@@ -1,0 +1,62 @@
+.mk-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+  height: 1.1733450667rem;
+  color: #fff;
+  background: #fc6454
+}
+
+.mk-header.fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0
+}
+
+.mk-header .title {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 50%;
+  font-size: .4266709333rem;
+  font-weight: 400
+}
+
+.mk-header .left,
+.mk-header .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  font-size: .3733370667rem
+}
+
+.mk-header .left .text,
+.mk-header .right .text {
+  padding-left: .2666693333rem;
+  height: 100%;
+  line-height: 1.1733450667rem;
+  color: #fff
+}
+
+.mk-header .left {
+  left: 0
+}
+
+.mk-header .left>a {
+  color: #fff
+}
+
+.mk-header .right {
+  right: .2666693333rem
+}
+
+.mk-header .back {
+  font-size: .5866725333rem;
+  width: 1.1733450667rem;
+  height: 1.1733450667rem
+}

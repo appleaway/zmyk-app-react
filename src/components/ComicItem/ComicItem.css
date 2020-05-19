@@ -1,0 +1,108 @@
+.comic-item-wrap {
+  width: 100%;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+}
+
+.mk-floor {
+  margin-bottom: 15px;
+}
+
+.mk-floor .comic-item {
+  display: inline-block;
+  width: 2.7rem;
+  flex: none;
+  padding: 0 5px;
+}
+
+.mk-floor .comic-item .thumbnail {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 133.33333%;
+  border-radius: .0800008rem;
+  box-sizing: border-box;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.mk-floor .comic-item .thumbnail img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%
+}
+
+.mk-floor .comic-item .score {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: .4266709333rem;
+  line-height: .4266709333rem;
+  padding: 0 .1066677333rem 0 .2133354667rem;
+  border-radius: .2133354667rem 0 0 .2133354667rem;
+  background-color: rgba(0, 0, 0, .5);
+  color: #fff;
+  font-size: .2666693333rem
+}
+
+.mk-floor .comic-item .score:before {
+  font-size: .2133354667rem;
+  margin-right: .0533338667rem;
+  vertical-align: bottom
+}
+
+.mk-floor .comic-item .chapter,
+.mk-floor .comic-item .desc,
+.mk-floor .comic-item .title {
+  display: block;
+  height: .5333386667rem;
+  line-height: .5333386667rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden
+}
+
+.mk-floor .comic-item .chapter {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 0 0.1333346667rem;
+  text-align: right;
+  font-size: .3200032rem;
+  color: #fff;
+  text-align: left;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.mk-floor .comic-item .title {
+  height: .6666733333rem;
+  padding-top: .1333346667rem;
+  color: #333;
+  font-size: .3733370667rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-weight: 400
+}
+
+.mk-floor .comic-item .title a {
+  color: #000000;
+}
+
+.mk-floor .comic-item .desc {
+  font-size: .2933362667rem;
+  color: #999
+}
+
+.comic-img {
+  background-image: url("https://image.zymkcdn.com/file/cover/000/004/525.jpg-300x400");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 1;
+}

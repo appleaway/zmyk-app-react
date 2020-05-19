@@ -4,7 +4,6 @@ import './index.css';
 import "./assets/js/flexible"
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-// import "./router/index"
 
 
 ReactDOM.render(<App />, document.getElementById('root'));

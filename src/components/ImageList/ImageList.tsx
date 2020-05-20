@@ -1,6 +1,7 @@
 import React from 'react';
 import "./ImageList.css";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 interface IImageProp {
   alt?: string;
@@ -12,6 +13,7 @@ interface IImageProp {
 const MyImage = ({ image }: { image: IImageProp }) => (
   <div>
     <LazyLoadImage
+      effect="blur"
       alt={image.alt}
       height={image.height}
       src={image.src} // use normal <img> attributes as props

@@ -95,3 +95,16 @@ export function getCategory() {
     url: "/category"
   });
 }
+
+/**
+ * 获取更多推荐
+ * @param typeId 推荐类型id
+ */
+export function getMoreRecommend(typeId: string) {
+  return instance({
+    url: "/recommend",
+    params: {
+      typeId
+    }
+  });
+}

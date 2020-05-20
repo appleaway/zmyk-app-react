@@ -62,7 +62,7 @@ function Update() {
       <Tabs tabs={tabs} initialPage={6} renderTabBar={(props) => <CustomUpdateTabs {...props} />} prerenderingSiblingsNumber={0}>
         {
           updateData.map((list, index) => (
-            <>
+            <div key={index}>
               <ul className="update-comic-list">
                 {
                   list.list?.map(item => {
@@ -72,14 +72,14 @@ function Update() {
                       width: "100%",
                       src: `https://image.zymkcdn.com/file/cover/${getComicIdPath(item.comic_id)}_2_1.jpg-720x360.jpg`
                     }
-                    return <ListItem image={image} data={item} />
+                    return <ListItem key={item.comic_id} image={image} data={item} />
                   })
                 }
               </ul>
               <div className="tips-text">
                 <p className="nomore">翻完了! 看看前一天的吧~</p>
               </div>
-            </>
+            </div>
           ))
         }
       </Tabs>

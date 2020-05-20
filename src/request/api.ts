@@ -108,3 +108,12 @@ export function getMoreRecommend(typeId: string) {
     }
   });
 }
+
+/**
+ * 获取一周的更新列表
+ */
+export function getUpdateList() {
+  return instance({
+    url: "/getupdatecomic_list"
+  });
+}

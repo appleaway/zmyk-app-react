@@ -18,6 +18,7 @@ const defaultFooterNav = [{
   activeIconClass: "ift-find",
   inActiveIconClass: "ift-find-outline",
 }, {
+  stop: true,
   path: "/mine",
   name: "我的",
   activeIconClass: "ift-mine",
@@ -40,7 +41,7 @@ export default function FooterNav() {
         {
           defaultFooterNav.map((item, index) => {
             return (
-              <li className="item" key={index}>
+              <li className={`${!item.stop ? 'item' : 'item stop'}`} key={index}>
                 <NavLink to={item.path}  >
                   <div className="icon">
                     <i className={currentPath === item.path ? item.activeIconClass : item.inActiveIconClass}></i>

@@ -117,3 +117,20 @@ export function getUpdateList() {
     url: "/getupdatecomic_list"
   });
 }
+
+/**
+ * 获取分类数据，根据人气，评分，推荐不同
+ * @param {string} sort 类别方式(人气，评分，推荐)
+ * @param {string} type 类别id
+ */
+export function getCateSortList(sort: string, type: string, page: number) {
+  return instance({
+    url: "http://api.zymk.cn/app_api/v5/getsortlist_new/",
+    params: {
+      page,
+      "client-type": "wap",
+      sort,
+      type
+    }
+  });
+}

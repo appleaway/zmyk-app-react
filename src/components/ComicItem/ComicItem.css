@@ -9,14 +9,14 @@
   margin-bottom: 15px;
 }
 
-.mk-floor .comic-item {
+.comic-item {
   display: inline-block;
   width: 2.7rem;
   flex: none;
   padding: 0 5px;
 }
 
-.mk-floor .comic-item .thumbnail {
+.comic-item .thumbnail {
   display: block;
   position: relative;
   width: 100%;
@@ -28,7 +28,7 @@
   overflow: hidden;
 }
 
-.mk-floor .comic-item .thumbnail img {
+.comic-item .thumbnail img {
   position: absolute;
   left: 0;
   top: 0;
@@ -36,7 +36,7 @@
   height: 100%
 }
 
-.mk-floor .comic-item .score {
+.comic-item .score {
   position: absolute;
   top: 0;
   right: 0;
@@ -49,15 +49,15 @@
   font-size: .2666693333rem
 }
 
-.mk-floor .comic-item .score:before {
+.comic-item .score:before {
   font-size: .2133354667rem;
   margin-right: .0533338667rem;
   vertical-align: bottom
 }
 
-.mk-floor .comic-item .chapter,
-.mk-floor .comic-item .desc,
-.mk-floor .comic-item .title {
+.comic-item .chapter,
+.comic-item .desc,
+.comic-item .title {
   display: block;
   height: .5333386667rem;
   line-height: .5333386667rem;
@@ -67,7 +67,7 @@
   overflow: hidden
 }
 
-.mk-floor .comic-item .chapter {
+.comic-item .chapter {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -80,7 +80,7 @@
   background-color: rgba(0, 0, 0, .5);
 }
 
-.mk-floor .comic-item .title {
+.comic-item .title {
   height: .6666733333rem;
   padding-top: .1333346667rem;
   color: #333;
@@ -90,17 +90,16 @@
   font-weight: 400
 }
 
-.mk-floor .comic-item .title a {
+.comic-item .title a {
   color: #000000;
 }
 
-.mk-floor .comic-item .desc {
+.comic-item .desc {
   font-size: .2933362667rem;
   color: #999
 }
 
 .comic-img {
-  background-image: url("https://image.zymkcdn.com/file/cover/000/004/525.jpg-300x400");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;

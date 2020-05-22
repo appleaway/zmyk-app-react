@@ -48,7 +48,7 @@
   z-index: 999;
 }
 
-.mk-category-header + .blank {
+.mk-category-header+.mk-header-blank {
   height: 44px;
 }
 
@@ -74,7 +74,8 @@
 
 .mk-category-header .left .text,
 .mk-category-header .right .text {
-  padding-left: .2666693333rem;
+  padding-right: 5px;
+  font-size: 12px;
   height: 100%;
   line-height: 44px;
   color: #fff
@@ -89,7 +90,15 @@
 }
 
 .mk-category-header .right {
-  right: .2666693333rem
+  right: 0;
+}
+
+.mk-category-header .right .hd {
+  padding-right: 10px;
+}
+
+.mk-sort-select>.hd i {
+  font-size: 12px;
 }
 
 .mk-category-header .back {
@@ -138,12 +147,88 @@
 }
 
 .mk-category-header.hd .search {
-  position: absolute;
-  top: 0;
-  right: -.2666693333rem;
   height: 44px;
   padding: .2666693333rem;
   font-size: .5333386667rem;
   color: #fff;
   z-index: 10
+}
+
+.mk-sort-select .hd {
+  text-align: right;
+}
+
+.mk-sort-select .mask {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, .75);
+  margin-top: 44px;
+  opacity: 1;
+  transition: opacity 0.2s linear;
+}
+
+.mk-sort-select .mask.hide {
+  opacity: 0;
+}
+
+.mk-sort-select .mask.remove {
+  display: none;
+}
+
+.mk-sort-select .order-list {
+  height: 120px;
+  overflow: hidden;
+  transition: all 0.2s linear;
+}
+
+.mk-sort-select .order-list.hide {
+  height: 0;
+}
+
+.mk-sort-select .order-list {
+  position: relative;
+  z-index: 10000;
+  width: 100vw;
+  background-color: #fff;
+}
+
+.mk-sort-select .order-list .item {
+  width: 100%;
+  text-align: center;
+  font-size: .3733370667rem;
+  height: 40px;
+  line-height: 40px;
+  color: #333;
+  border-bottom: .0133334667rem solid #ddd;
+}
+.mk-sort-select .bd {
+  position: absolute;
+  left: 51px;
+  transform: translateX(-100%);
+}
+
+.sort-wrap {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.sort-wrap .sort-item {
+  display: flex;
+  flex-basis: 33.33%;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+.sort-wrap .sort-item .comic-item {
+  width: 100%;
+}
+.sort-wrap .sort-item .comic-item .chapter {
+  text-align: right;
 }

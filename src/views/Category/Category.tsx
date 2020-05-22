@@ -52,8 +52,12 @@ export default function Category() {
 }
 
 function ContentItem({ id, img, name }: ICategoryItem) {
+  const history = useHistory();
+  function onContentItemClick(id: string) {
+    history.push(`/sort/${id}`, {title: name})
+  }
   return (
-    <li className="item">
+    <li className="item" onClick={() => onContentItemClick(id)}>
       <div className="thumbnail">
         <img src={spaceGif} style={{ backgroundImage: `url(${img})` }} alt={name} />
       </div>

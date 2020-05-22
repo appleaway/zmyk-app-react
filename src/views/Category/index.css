@@ -47,7 +47,9 @@
   background: #fc6454;
   z-index: 999;
 }
-
+.mk-category-header.hd .title {
+  color: #fff;
+}
 .mk-category-header+.mk-header-blank {
   height: 44px;
 }

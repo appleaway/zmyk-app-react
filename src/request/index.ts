@@ -1,7 +1,9 @@
 import axios from "axios";
 // axios.defaults.withCredentials = true;
 
-const instance = axios.create();
+const instance = axios.create({
+  baseURL: process.env.NODE_ENV === "development" ? "" : "/api"
+});
 
 instance.interceptors.request.use(
   function onFulfilled(config) {

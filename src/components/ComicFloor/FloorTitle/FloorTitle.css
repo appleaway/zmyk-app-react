@@ -1,21 +1,21 @@
-.hd {
+.mk-floor .hd {
   height: .8533418667rem;
   padding: 0 .3333366667rem;
   align-items: flex-end;
   margin-bottom: .2666693333rem
 }
 
-.hd,
-.hd .main {
+.mk-floor .hd,
+.mk-floor .hd .main {
   display: flex;
   align-items: flex-end
 }
 
-.hd .main {
+.mk-floor .hd .main {
   flex: 1;
 }
 
-.hd .icon {
+.mk-floor .hd .icon {
   display: inline-block;
   width: .800008rem;
   height: .7466741333rem;
@@ -26,14 +26,14 @@
   background-repeat: no-repeat
 }
 
-.hd .title {
+.mk-floor .hd .title {
   font-size: .400004rem;
   margin-bottom: 0;
   color: #333;
   font-weight: 700
 }
 
-.hd .summary {
+.mk-floor .hd .summary {
   margin-left: .2133354667rem;
   margin-bottom: 0;
   font-size: .3200032rem;
@@ -41,7 +41,7 @@
   vertical-align: bottom
 }
 
-.hd .more {
+.mk-floor .hd .more {
   display: flex;
   align-items: center;
   height: .4266709333rem;
@@ -52,32 +52,32 @@
   border-radius: .2133354667rem
 }
 
-.hd .more .ift-mantou {
+.mk-floor .hd .more .ift-mantou {
   font-size: .2666693333rem;
   margin-right: .0533338667rem;
   color: #ddd
 }
 
-.hd .icon-1 {
+.mk-floor .hd .icon-1 {
   background-position: 0 0
 }
 
-.hd .icon-2 {
+.mk-floor .hd .icon-2 {
   background-position: 0 -.7466741333rem
 }
 
-.hd .icon-3 {
+.mk-floor .hd .icon-3 {
   background-position: 0 -1.4933482667rem
 }
 
-.hd .icon-4 {
+.mk-floor .hd .icon-4 {
   background-position: 0 -2.2400224rem
 }
 
-.hd .icon-5 {
+.mk-floor .hd .icon-5 {
   background-position: 0 -2.9866965333rem
 }
 
-.hd .icon-6 {
+.mk-floor .hd .icon-6 {
   background-position: 0 -3.7333706667rem
 }

@@ -14,6 +14,7 @@ function RouterView(props: RouteProps) {
   console.log("RouterView props", props)
   const { from, to } = props;
   const children = props.routes || [];
+  const Loading = <p>Loading...</p>
 
 
   return (
@@ -22,7 +23,6 @@ function RouterView(props: RouteProps) {
         {(from && to) && <Redirect from={from} to={to} exact />}
         {
           children.map((route, index) => {
-            const Loading = <p>Loading...</p>
             return (
               <Route sensitive strict key={index} path={route.path} render={
                 (props) => <Suspense fallback={Loading}><route.component {...props} routes={route.children} /></Suspense>

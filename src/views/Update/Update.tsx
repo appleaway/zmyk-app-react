@@ -88,24 +88,28 @@ function Update() {
   )
 }
 const ListItem = ({ image, data }: { image: IImageProp, data: IUpdateItem }) => {
+  console.log('data', data);
+  
   return (
 
     <li className="item comic-item">
-      <div className="thumbnail">
-        <LazyLoadImage
-          effect="blur"
-          alt={image.alt}
-          height={image.height}
-          src={image.src}
-          width={image.width} />
-      </div>
-      <div className="hot_message">
-        <img className="hot_img" src={hotPng} alt="hot" />
-        <span>{hotText(data.hot)}</span>
-      </div>
-      <p className="title">{data.comic_name}</p>
-      <p className="desc">{data.comic_feature}</p>
-      <p className="update_page">{data.last_chapter?.name}</p>
+      <a href={`/book/${data.comic_id}`}>
+        <div className="thumbnail">
+          <LazyLoadImage
+            effect="blur"
+            alt={image.alt}
+            height={image.height}
+            src={image.src}
+            width={image.width} />
+        </div>
+        <div className="hot_message">
+          <img className="hot_img" src={hotPng} alt="hot" />
+          <span>{hotText(data.hot)}</span>
+        </div>
+        <p className="title">{data.comic_name}</p>
+        <p className="desc">{data.comic_feature}</p>
+        <p className="update_page">{data.last_chapter?.name}</p>
+      </a>
     </li>
   )
 }

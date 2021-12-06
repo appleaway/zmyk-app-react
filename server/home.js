@@ -217,7 +217,7 @@ Router.get("/getupdatecomic_list", async (req, res, next) => {
   if (updateRequest !== null) {
     handlerReponse();
   } else {
-    updateRequest = axios.get("https://m.zymk.cn/api/getupdatecomic_list/");
+    updateRequest = axios.get("https://m.zymk.cn/apinew/getupdatecomic_list/");
     handlerReponse();
   }
 
